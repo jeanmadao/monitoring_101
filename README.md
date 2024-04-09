@@ -12,8 +12,8 @@ The load averages is displayed in this format:
 
 The numbers represents the average the system has been utilized
 for the past 1, 5, 15 minutes respectively. If our objective is
-to fully use our system, then we should aim for `1.0`.
-
+to fully use our system, then we should aim for `1.0` with all
+the services needed running.
 
 Checking that the temperature of the machine doesn't overheat
 is also important to avoid a deterioration of the performance,
@@ -27,7 +27,7 @@ is used instead. Resorting to SWAP results in a drop of the
 system performances because the I/O speed is not as fast as 
 with RAM. This also results in using more CPU cycles to manage
 virtual memory swapping. Therefore, checking that we always
-have enough RAM available is very important if we want to
+have enough RAM available is very important if we want
 our machine to stay performant.
 
 <img src="assets/ram.png">
