@@ -39,11 +39,19 @@ in the storage, downloading and upgrading packages wouldn't be
 possible otherwise. Always check if there are some old caches
 or logs that we could get rid of.
 
+<img src="assets/df.png">
+
 ### Network traffic
 Checking the network traffic is very important to check that
 the machine isn't using more bandwith than it's supposed to.
 Also monitoring the traffic and looking for any malicious 
 actor to prevent any attacks.
+
+The administrator can check the network usage in a machine
+with `nethogs`. It displays which process receives and sends
+packets, and how much. This way, we can easily identify which
+process is receiving or sending too much over the network.
+<img src="assets/nethogs.png">
 
 ## Checking Memory Intensive Processes
 ### What are Processes ?
@@ -64,6 +72,8 @@ One can check the different processes running with the command
 Systemd logging system is stored in `/var/log/journal/` by
 default. To consult them, you can use the command `journalctl`
 
+<img src="assets/journalctl.png" width="700" >
+
 ## Monitoring Users
 A root user could monitor the users in different ways. Reading
 the `.bash_history` in a user's home directory is a way to
@@ -79,13 +89,10 @@ with top and sort them by its users.
 <img src="assets/processes.png" width="700" >
 
 Another useful command is `w`. This displays the logged in
-users as well as their current process, and average CPU load
+users as well as their current process, and average CPU load.
 
 <img src="assets/w.png">
 
 ## Machine Uptime
-`uptime`
-
-## Assessing Network Traffic
-`nethogs`
+<img src="assets/uptime.png">
 
